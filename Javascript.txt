@@ -1,0 +1,1564 @@
+1. What is JavaScript?
+	JavaScript is a client-side as well as server side scripting language that can be inserted into HTML pages and is understood by web browsers. JavaScript is also an Object based Programming language
+
+2. Enumerate the differences between Java and JavaScript?
+	Java is a complete programming language. In contrast, JavaScript is a coded program that can be introduced to HTML pages. These two languages are not at all inter-dependent and are designed for the different intent. Java is an object - oriented programming (OOPS) or structured programming language like C++ or C whereas JavaScript is a client-side scripting language.
+
+3. What are JavaScript Data Types?
+	Following are the JavaScript Data types:
+
+		Number
+		String
+		Boolean
+		Object
+		Undefined
+
+4. What is the use of isNaN function?
+	isNan function returns true if the argument "is not a number" otherwise it is false.
+
+
+5. What is negative infinity?
+	Negative Infinity is a number in JavaScript which can be derived by dividing negative number by zero.
+
+6. Which company developed JavaScript?
+	"Netscape" is the software company who developed JavaScript.
+
+7. What are undeclared and undefined variables?
+	Undeclared variables are those that do not exist in a program and are not declared. If the program tries to read the value of an undeclared variable, then a runtime error is encountered.
+
+	Undefined variables are those that are declared in the program but have not been given any value. If the program tries to read the value of an undefined variable, an undefined value is returned.
+
+8. What are global variables? How are these variable declared and what are the problems associated with using them?
+	Global variables are those that are available throughout the length of the code, that is, these have no scope. The var keyword is used to declare a local variable or object. If the var keyword is omitted, a global variable is declared.
+
+	Example:
+		// Declare a global globalVariable = "Test";
+
+	The problems that are faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.
+
+9. Explain the working of timers in JavaScript? Also elucidate the drawbacks of using the timer, if any?
+	Timers are used to execute a piece of code at a set time or also to repeat the code in a given interval of time. This is done by using the functions 
+		setTimeout, setInterval and clearInterval.
+
+	The setTimeout(function, delay) function is used to start a timer that calls a particular function after the mentioned delay.
+	The setInterval(function, delay) function is used to repeatedly execute the given function in the mentioned delay and only halts when cancelled.
+	The clearInterval(id) function instructs the timer to stop.
+
+	Timers are operated within a single thread, and thus events might queue up, waiting to be executed.
+
+10. What is the difference between ViewState and SessionState?
+	'ViewState' is specific to a page in a session.
+	'SessionState' is specific to user specific data that can be accessed across all pages in the web application.
+
+11. What is === operator?
+	=== is called as strict equality operator which returns true when the two operands are having the same value without any type conversion.
+
+12. Explain how can you submit a form using JavaScript?
+	To submit a form using JavaScript use document.form[0].submit();
+
+	document.form[0].submit();
+
+13. How can the style/class of an element be changed?
+	It can be done in the following way:
+
+	document.getElementById("myText").style.fontSize = "20?;
+	or
+
+	document.getElementById("myText").className = "anyclass";
+
+14. What is called Variable typing in Javascript?
+	Variable typing is used to assign a number to a variable and the same variable can be assigned to a string.
+
+	Example:-
+
+	i = 10;
+	i = "string";
+	This is called variable typing.
+
+15. How can you convert the string of any base to integer in JavaScript?
+	The parseInt() function is used to convert numbers between different bases. parseInt() takes the string to be converted as its first parameter, and the second parameter is the base of the given string.
+
+	In order to convert 4F (of base 16) to integer, the code used will be -
+
+	parseInt ("4F", 16);
+
+16. What would be the result of 3+2+"7"?
+	Since 3 and 2 are integers, they will be added numerically. And since 7 is a string, its concatenation will be done. So the result would be 57.
+
+17. How to find operating system in the client machine using JavaScript?
+	The 'Navigator.appversion' is used to find the name of the operating system in the client machine.
+
+18. What do mean by NULL in Javascript?
+	The NULL value is used to represent no value or no object. It implies no object or null string, no valid boolean value, no number and no array object.
+
+19. What is the function of delete operator?
+	The delete keyword is used to delete the property as well as its value.
+
+	Example:-
+
+	var student= {age:20, batch:"ABC"};
+	delete student.age;
+
+20. What is an undefined value in JavaScript?
+	Undefined value means the -
+
+	Variable used in the code doesn't exist
+	Variable is not assigned to any value
+	Property doesn't exist
+
+21. What are all the types of Pop up boxes available in JavaScript?
+	Alert
+	Confirm and
+	Prompt
+
+22. What is the use of Void(0)?
+	Void(0) is used to prevent the page from refreshing and parameter "zero" is passed while calling.
+
+	Void(0) is used to call another method without refreshing the page.
+
+23. How can a page be forced to load another page in JavaScript?
+	The following code has to be inserted to achieve the desired effect:
+
+	<script language="JavaScript" type="text/javascript" >
+	<!-- location.href="http://newhost/newpath/newfile.html"; //--></script>
+
+24. What is the data type of variables of in JavaScript?
+	All variables in the JavaScript are object data types.
+
+25. What are escape characters?
+	Escape characters (Backslash) is used when working with special characters like single quotes, double quotes, apostrophes and ampersands. Place backslash before the characters to make it display.
+
+	Example:
+
+	document.write "I m a "good" boy"
+	document.write "I m a \"good\" boy"
+
+26. What are JavaScript Cookies?
+	Cookies are the small test files stored in a computer and it gets created when the user visits the websites to store information that they need. Example could be User Name details and shopping cart information from the previous visits.
+
+27. Explain what is pop()method in JavaScript?
+	The pop() method is similar as the shift() method but the difference is that the Shift method works at the start of the array. Also the pop() method take the last element off of the given array and returns it. The array on which is called is then altered.
+
+	Example:-
+
+	var cloths = ["Shirt", "Pant", "TShirt"];
+	cloths.pop();
+	//Now cloth becomes Shirt,Pant
+
+28. Mention what is the disadvantage of using innerHTML in JavaScript?
+	If you use innerHTML in JavaScript the disadvantage is-
+
+	Content is replaced everywhere
+	We cannot use like "appending to innerHTML"
+	Even if you use +=like "innerHTML = innerHTML + 'html'" still the old content is replaced by html
+	The entire innerHTML content is re-parsed and build into elements, therefore its much slower
+	The innerHTML does not provide validation and therefore we can potentially insert valid and broken HTML in the document and break it
+
+29. What are the two basic groups of dataypes in JavaScript?
+	They are as –
+
+	Primitive
+	Reference types.
+
+	Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.
+
+30. How generic objects can be created?
+	Generic objects can be created as:
+
+	var I = new object();
+
+31. What is the use of type of operator?
+	'Typeof' is an operator which is used to return a string description of the type of a variable.
+
+32. Which keywords are used to handle exceptions?
+	Try… Catch---finally is used to handle exceptions in the JavaScript
+
+	Try{
+		Code
+	}
+	Catch(exp){
+		Code to throw an exception
+	}
+	Finally{
+		Code runs either it finishes successfully or after catch
+	}
+
+33. Which keyword is used to print the text in the screen?
+	document.write("Welcome") is used to print the text – Welcome in the screen.
+
+34. What is the use of blur function?
+	Blur function is used to remove the focus from the specified object.
+
+35. What are the different types of errors in JavaScript?
+	There are three types of errors:
+
+	Load time errors: Errors which come up when loading a web page like improper syntax errors are known as Load time errors and it generates the errors dynamically.
+	Run time errors: Errors that come due to misuse of the command inside the HTML language.
+	Logical Errors: These are the errors that occur due to the bad logic performed on a function which is having different operation.
+
+36. What is the use of Push method in JavaScript?
+	The push method is used to add or append one or more elements to the end of an Array. Using this method, we can append multiple elements by passing multiple arguments
+
+37. What is unshift method in JavaScript?
+	Unshift method is like push method which works at the beginning of the array. This method is used to prepend one or more elements to the beginning of the array.
+
+38. What is the difference between JavaScript and Jscript?
+	Both are almost similar. JavaScript is developed by Netscape and Jscript was developed by Microsoft .
+
+39. What is the 'Strict' mode in JavaScript and how can it be enabled?
+	Strict Mode adds certain compulsions to JavaScript. Under the strict mode, JavaScript shows errors for a piece of codes, which did not show an error before, but might be problematic and potentially unsafe. Strict mode also solves some mistakes that hamper the JavaScript engines to work efficiently.
+
+	Strict mode can be enabled by adding the string literal "use strict" above the file. This can be illustrated by the given example:
+
+	function myfunction() {
+    		"use strict";
+    		var v = "This is a strict mode function";
+	}
+
+40. What is the way to get the status of a CheckBox?
+	The status can be acquired as follows -
+
+	alert(document.getElementById('checkbox1').checked);
+
+	If the CheckBox will be checked, this alert will return TRUE.
+
+41. Explain window.onload and onDocumentReady?
+	The onload function is not run until all the information on the page is loaded. This leads to a substantial delay before any code is executed.
+
+	onDocumentReady loads the code just after the DOM is loaded. This allows early manipulation of the code.
+
+42. How can a value be appended to an array?
+	A value can be appended to an array in the given manner -
+
+	arr[arr.length] = value;
+
+43. What is the difference between .call() and .apply()?
+	The function .call() and .apply() are very similar in their usage except a little difference. .call() is used when the number of the function's arguments are known to the programmer, as they have to be mentioned as arguments in the call statement. On the other hand, .apply() is used when the number is not known. The function .apply() expects the argument to be an array.
+
+	The basic difference between .call() and .apply() is in the way arguments are passed to the function. Their usage can be illustrated by the given example.
+
+	var someObject = {
+		myProperty : 'Foo',
+
+		myMethod : function(prefix, postfix) {
+			alert(prefix + this.myProperty + postfix);
+		}
+	};
+	someObject.myMethod('<', '>'); // alerts '<Foo>'
+	var someOtherObject  = {
+		myProperty : 'Bar'
+	};
+	someObject.myMethod.call(someOtherObject, '<', '>'); // alerts '<Bar>'
+
+	someObject.myMethod.apply(someOtherObject, ['<', '>']); // alerts '<Bar>'
+
+44. Define event bubbling?
+	JavaScript allows DOM elements to be nested inside each other. In such a case, if the handler of the child is clicked, the handler of parent will also work as if it were clicked too.
+
+45. How can a particular frame be targeted, from a hyperlink, in JavaScript?
+	This can be done by including the name of the required frame in the hyperlink using the 'target' attribute.
+		<a href="/newpage.htm" target="newframe">>New Page</a>
+
+46. What is the method for reading and writing a file in JavaScript?
+	This can be done by Using JavaScript extensions (runs from JavaScript Editor), example for opening of a file -
+		fh = fopen(getScriptPath(), 0);
+
+47. What are Screen objects?
+	Screen objects are used to read the information from the client's screen. The properties of screen objects are -
+
+		AvailHeight: Gives the height of client's screen
+		AvailWidth: Gives the width of client's screen.
+		ColorDepth: Gives the bit depth of images on the client's screen
+		Height: Gives the total height of the client's screen, including the taskbar
+		Width: Gives the total width of the client's screen, including the taskbar
+
+48. Define unescape() and escape() functions?
+	The escape () function is responsible for coding a string so as to make the transfer of the information from one computer to the other, across a network.
+
+	For Example:
+
+	<script>
+		document.write(escape("Hello? How are you!"));
+	</script>
+	Output: Hello%3F%20How%20are%20you%21
+
+	The unescape() function is very important as it decodes the coded string.
+
+	It works in the following way. For example:
+
+	<script>
+		document.write(unescape("Hello%3F%20How%20are%20you%21"));
+	</script>
+	Output: Hello? How are you!
+
+49. What are the decodeURI() and encodeURI()?
+	EncodeURl() is used to convert URL into their hex coding. And DecodeURI() is used to convert the encoded URL back to normal.
+
+	<script>
+		var uri="my test.asp?name=ståle&car=saab";
+
+		document.write(encodeURI(uri)+ "<br>");
+
+		document.write(decodeURI(uri));
+	</script>
+	Output -
+
+	my%20test.asp?name=st%C3%A5le&car=saab
+
+	my test.asp?name=ståle&car=saab
+
+50. What does the following statement declares?
+
+	var myArray = [[[]]];
+	It declares a three dimensional array.
+
+51. How can JavaScript codes be hidden from old browsers that don't support JavaScript?
+	For hiding JavaScript codes from old browsers:
+
+		Add "<!--" without the quotes in the code just after the <script> tag.
+		Add "//-->" without the quotes in the code just before the <script> tag.
+
+	Old browsers will now treat this JavaScript code as a long HTML comment. While, a browser that supports JavaScript, will take the "<!--" and "//-->" as one-line comments.
+
+
+=======================================================
+typeof -	Returns the type of a variable
+instanceof -	Returns true if an object is an instance of an object type
+
+
+The exponentiation operator (**) raises the first operand to the power of the second operand.
+var x = 5;
+var z = x ** 2;          // result is 5*5 = 25
+var z = Math.pow(x,2);   // result is 5*5 = 25  -- both are same
+
+
+typeof ""             // Returns "string"
+typeof "John"         // Returns "string"
+typeof 0              // Returns "number"
+typeof 314            // Returns "number"
+typeof 3.14           // Returns "number"
+typeof true           // Returns "boolean"
+typeof {name:'John', age:34} // Returns "object"
+typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
+typeof null                  // Returns "object"
+typeof function myFunc(){}   // Returns "function"
+typeof NaN;            // returns "number"
+
+
+Difference Between Undefined and Null
+typeof undefined           // undefined
+typeof null                // object
+
+null === undefined         // false
+null == undefined          // true
+
+
+var x = new String();        // Declares x as a String object
+var y = new Number();        // Declares y as a Number object
+var z = new Boolean();       // Declares z as a Boolean object
+Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.
+
+
+var x = "John";             
+var y = new String("John");
+// (x == y) is true because x and y have equal values
+// (x === y) is false because x and y have different types (string and object)
+
+
+var x = new String("John");             
+var y = new String("John");
+// (x == y) is false because x and y are different objects
+// (x === y) is false because x and y are different objects
+
+
+var pos = str.lastIndexOf("locate");
+var pos = str.lastIndexOf("locate", 15);   - search will start at the position 15 till begining of the string
+var pos = str.search("locate");   - searches a string for a specified value and returns the position of the match, can take regx
+var res = str.slice(7, 13);    - getting the string between 7 & 12 , it can accept negative values as well,, JavaScript counts positions from zero. First position is 0.
+var res = str.substring(7, 13);   - unable to accept negative values
+var res = str.substr(7, 6);    - same as slice,, The difference is that the second parameter specifies the length of the extracted part.
+var n = str.replace("Microsoft", "W3Schools");    - replaces only the first match
+var n = str.replace(/MICROSOFT/i, "W3Schools");   - To replace case insensitive, use a regular expression with an /i flag (insensitive):
+var n = str.replace(/Microsoft/g, "W3Schools");   - To replace all matches, use a regular expression with a /g flag (global match):
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+var text3 = text1.concat(" ", text2);
+alert(str.trim());
+
+
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H
+
+var str = "HELLO WORLD";
+str.charCodeAt(0);         // returns 72,, returns the unicode of the character
+
+var str = "HELLO WORLD";
+str[0];                   // returns H
+
+var str = "HELLO WORLD";
+str[0] = "A";             // Gives no error, but does not work
+str[0];                   // returns H
+
+var txt = "Hello";       // String
+txt.split("");           // Split in characters
+
+var x = "100";
+var y = "10";
+var z = x / y;       // z will be 10  ,,  JavaScript will try to convert strings to numbers in all numeric operations
+
+// But this will not work
+var x = "100";
+var y = "10";
+var z = x + y;       // z will not be 110 (It will be 10010)
+
+var x = 100 / "Apple";
+isNaN(x);               // returns true because x is Not a Number
+
+var x = NaN;
+var y = 5;
+var z = x + y;         // z will be NaN
+
+//Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+var myNumber = 2;
+while (myNumber != Infinity) {   // Execute until Infinity
+  myNumber = myNumber * myNumber;
+}
+
+
+//By default, JavaScript displays numbers as base 10 decimals.
+But you can use the toString() method to output numbers from base 2 to base 36.
+Hexadecimal is base 16. Decimal is base 10. Octal is base 8. Binary is base 2.
+var myNumber = 32;
+myNumber.toString(10);  // returns 32
+myNumber.toString(32);  // returns 10
+myNumber.toString(16);  // returns 20
+myNumber.toString(8);   // returns 40
+myNumber.toString(2);   // returns 100000
+
+
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+
+
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+
+
+x.valueOf();        -- returns an object
+
+// The Number() Method
+Number(true);          // returns 1
+Number(false);         // returns 0
+Number("10");          // returns 10
+Number("  10");        // returns 10
+Number("10  ");        // returns 10
+Number(" 10  ");       // returns 10
+Number("10.33");       // returns 10.33
+Number("10,33");       // returns NaN
+Number("10 33");       // returns NaN 
+Number("John");        // returns NaN
+
+
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+
+var x = Number.MAX_VALUE;   --  returns the largest possible number in JavaScript.
+var x = 100 / "Apple";  // x will be NaN (Not a Number)
+
+var points = new Array();     // Bad
+var points = [];              // Good 
+
+var points = new Array(40);  // Creates an array with 40 undefined elements !!!!!
+var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+
+Array.isArray(fruits);   // returns true,, to check if fruits is an array
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");     //  Banana * Orange * Apple * Mango
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+The first parameter (2) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // Removes the first element of fruits
+The first parameter (0) defines the position where new elements should be added (spliced in).
+The second parameter (1) defines how many elements should be removed.
+
+
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias", "Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);   // Concatenates arr1 with arr2 and arr3
+var myChildren = arr1.concat(["Emil", "Tobias", "Linus"]);   // can also take values as arguments
+
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();        // Sorts the elements of fruits
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();        // First sort the elements of fruits 
+fruits.reverse();     // Then reverse the order of the elements
+
+
+// The purpose of the compare function is to define an alternative sort order.
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a - b});   // compare function
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});  // sort an array descending
+
+
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return 0.5 - Math.random()});   // Sorting an Array in Random Order
+
+
+// to find the highest number in an array
+function myArrayMax(arr) {
+  return Math.max.apply(null, arr);
+}
+
+// to find the lowest number in an array
+function myArrayMax(arr) {
+  return Math.min.apply(null, arr);
+}
+
+
+// Sorting Object Arrays
+var cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}
+];
+
+cars.sort(function(a, b){return a.year - b.year});  // comparing numbers
+
+// comparing string
+cars.sort(function(a, b){
+  var x = a.type.toLowerCase();
+  var y = b.type.toLowerCase();
+  if (x < y) {return -1;}
+  if (x > y) {return 1;}
+  return 0;
+});
+
+
+
+// Array Iteration Methods
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {    // no need to specify  - index, array,,,,   function myFunction(value)
+  txt = txt + value + "<br>"; 
+}
+
+
+//Array.map()
+//The map() method creates a new array by performing a function on each array element.
+The map() method does not execute the function for array elements without values.
+The map() method does not change the original array.
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {    //  the index and array parameters can be omitted
+  return value * 2;
+}
+
+
+//Array.filter()
+The filter() method creates a new array with array elements that passes a test.
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(myFunction);
+
+function myFunction(value) {   //  the index and array parameters, can be omitted
+  return value > 18;
+}
+
+// Array.reduce()  ---  runs a function on each array element to produce (reduce it to) a single value
+// Array.reduceRight()  ---  runs a function on each array element to produce (reduce it to) a single value
+// Array.every()   ---  check if all array values pass a test
+// Array.some()   ---  check if some array values pass a test
+// Array.indexOf()   ---  searches an array for an element value and returns its position
+// Array.lastIndexOf()  ---  searches from the end of the array
+// Array.find()   ---  returns the value of the first array element that passes a test function
+// Array.findIndex()   ---  returns the index of the first array element that passes a test function
+ 
+
+Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive)
+
+//The Boolean() Function
+You can use the Boolean() function to find out if an expression (or a variable) is true
+
+
+JavaScript Declarations are Hoisted
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared.
+// Variables and constants declared with let or const are not hoisted!
+
+x = 5; // Assign 5 to x
+elem = document.getElementById("demo"); // Find an element 
+elem.innerHTML = x;                     // Display x in the element
+var x; // Declare x  after its usage   --- but its valid
+
+
+
+"use strict";
+x = 3.14;       // This will cause an error because x is not declared
+	// Deleting a variable (or object) is not allowed.
+	// Deleting a function is not allowed.
+	// Duplicating a parameter name is not allowed
+=======================================================
+
+Prompt box :
+var user = prompt("Please enter your name","Default");
+------------------------------------
+Object creation :
+var person = {name:"John", age:31, favColor:"green", height:183};
+
+// person is a object and name,age,favColor,height are the properties
+
+// can be called as
+person.name OR person['name']
+------------------------------------
+
+// with constructor 
+function person(name,age){
+  this.name = name;
+  this.age = age;
+}
+var John = new Person("John", 25);
+document.write(John.age);
+------------------------------------
+
+// with method
+function person(name,age){
+  this.name = name;
+  this.age = age;
+  this.changeName = function(name){
+    this.name = name;
+  }
+}
+var p = new Person("John", 25);
+p.changeName("Ann");    // as like document.write();
+------------------------------------
+
+// another way
+function person(name,age){
+  this.name = name;
+  this.age = age;
+  this.yearOfBirth = bornYear;
+}
+function bornYear(){
+	return 2016 - this.age;
+}
+
+var p = new person("A",22);
+document.write(p.yearOfBirth());
+------------------------------------
+
+// Array
+var c = new Array("HTML","CSS","JS");
+document.write(c[0]);
+
+var c = new Array(3);
+c[0] = "HTML";
+c[1] = "CSS";
+c[2] = "JS";
+
+
+var c = new Array();  // DYNAMICALY ASSIGN 3
+c[0] = "HTML";
+c[1] = "CSS";
+c[2] = "JS";
+
+
+var c = ["HTML","CSS","JS"];  // ARRAY LITERAL   -- FOR QUICK DECLARATION OF ARRAY
+
+
+// PROPERTIES :-
+a1.concat(a2);
+c.length;
+
+
+// Associative Arrays
+var person = [];
+person["name"] = "John";
+person["age"] = 46;
+document.write(person["age"]);
+
+
+// Math object
+Math.abs(4);
+Math.PI
+Math.sqrt(81);
+
+
+// setInterval  -- keep on executing after specified time interval
+var t = setInterval(myFun,3000);
+var pos = 0;
+function myFun(){
+ if(pos>=150){
+    clearInterval(t);
+  }else{
+    alert("hi");
+    pos++;
+  }
+}
+
+// use clearInterval() to stop the above setInterval
+
+// setTimeOut - will wait till specified time interval, then execute only once
+
+// Date
+var d = new Date();   // current date
+d.getHours();
+d.getMinutes();
+d.getSeconds();
+
+
+// getting element
+getElementById
+getElementByClassName
+getElementByTagName
+
+
+// if our html page contained 3 elements with class 'demo'
+var arr=document.getElementsByClassName("demo");
+arr[1].innerHTML = "Hi";
+
+
+// same with getElementByTagName
+<p>hi</p>
+<p>hello</p>
+<p>hi</p>
+<script>
+var arr = document.getElementByTagName("p");
+for(var x = 0; x< arr.length; x++){}{
+arr[x].innerHTML = "Hi there";
+}
+</script>
+
+
+
+// with DOM
+element.childNodes  => returns an array of an elements child nodes
+element.firstChild
+element.lastChild
+element.hasChildNodes
+element.nextsibling
+element.parentNode
+
+
+// changing element property
+var el = document.getElementById("myImg");
+el.src = "apple.png"
+
+var el = document.getElementByTagName("a");
+el.href = "http://apple.com"
+
+var el = document.getElementById("demo");
+el.style.color = "green";
+el.style.width = "100px";
+
+
+// adding and removing
+element.cloneNode();
+document.createElement(e);
+document.createTextNode(text);
+parent.removeChild(child);
+
+// appending
+element.appendChild(newNode);  // insert as last child
+element.insertBefore(node1,node2);  // insert node1 as child before node2
+
+
+var p = document.createElement("p");
+var node = document.createTextNode("Some new Text");
+p.appendChild(node);
+var div = document.getElementById("demo");
+div.appendChild(p);
+
+
+// removing
+var parent = document.getElementById("demo");
+var child = document.getElementById("p1");
+parent.removeChild(child);
+
+
+//replacing child
+parent.replaceChild(p,child);   // p is new and child is old  ,, p will replace child
+
+
+
+// Events
+<button onclick="show()">Click Me</button>
+<script>
+function show(){
+  alert("Hi");
+}
+</script>
+
+var x = document.getElementById("demo");
+x.onclick = function(){
+  document.body.innerHTML = Date();
+}
+
+
+window.onload = function(){   }
+
+// we take values of textbox with value property
+x.value
+
+
+//Event Listeners
+element.addEventListener("click",myFunction, useCapture)
+	// "click" - it is an event
+	// myFunction is some external function we have written.
+	// inplace of useCapture we can use true or false
+	// false = bubbling   -- innermost first then outer one (default)
+	// true = capturing  -- outermost first then inner
+
+// if <div><p></p></div>  with false the click will go with <p> first  ,,, with true the click will go with <div> first
+
+element.removeEventListener("mouseover",myFunction);   // it will remove the listener.
+
+
+// form validation
+onsubmit="return validate()"
+
+// ECMAScript6 (ES)
+
+//variables
+ var   -- globle
+ let  -- local
+ const  -- constant
+
+// Template Literals
+let name = 'David';
+let msg = `Welcome ${name}!`;
+let calculate = `The sum is ${a+b}`;
+
+
+// loops
+for..in   -- do not use it with arrays
+	-- to loop over enumerable keys
+
+let obj = {a:1,b:2,c:3};
+for(let v in obj){
+  console.log(v);   // v gives string here
+}
+
+
+// for..of  -- loop over iterable objects
+let list = ["x","y","z"];     // an array
+for (let val of list){
+  console.log(val);
+}
+
+OR
+for(let ch of "Hello"){
+   console.log(ch);   // it will print each character
+}
+
+// for..of  also works with Map,Set,WeakMap & WeakSet
+
+
+// forEach
+var arr = [2,3,7,8];    // an array
+arr.forEach(function(el)){
+  console.log(el*2);
+});
+
+
+// Functions in ES
+//suppose there is a function
+function add(x,y){
+	var sum = x+y;
+	console.log(sum);
+}
+
+
+// IN ES we can do as
+const add = (x,y) => {
+	let sum = x+y;
+	console.log(sum);
+}
+
+// If there ia a single parameter
+const greet = x => "Welcome " + x;
+
+// If no parameter
+const x = () => alert("Hi");
+
+
+// we can modify the above ForEach loop
+var arr = [2,3,7,8];   // an array
+arr.forEach(el => {
+  console.log(el*2);
+});
+
+
+// default values in function parameters
+function test(a,b=3,c=42){   // assigning values for b & c
+	return a+b+c;
+}
+console.log(test(5));
+
+
+// with arrow function
+const test  = (a,b=3,c=42) => {
+	return a+b+c;
+}
+console.log(test(5));
+
+
+
+// in the below code last value will replace all others 
+var a = {x:1,x:2,,x:3,x:4};   // object
+console.log(a.x);   // 4
+
+
+// creating object
+let tree = {
+   height : 10,
+   color : 'green',
+   grow(){
+      this.height += 2;
+   }
+};
+
+tree.grow();   // tree is the object
+console.log(tree.height);
+
+
+// instead we can add already assigned variables into object as well
+let height = 5;
+let health = 100;
+
+let athlete = {    // athlete is the object
+  height,
+  health
+};
+
+
+// computed properties
+let prop = 'name';
+let id = '1234';
+let mobile = '7788990033';
+
+let user = {
+   [prop] : 'Jack',     // here prop will be replaced with it's value i.e. name
+   [`user_${id}`] : `${mobile}`    // here id and mobile will be replaced with it's values
+};
+
+console.log(user.name);   // Jack
+console.log(user.user_1234);   // 7788990033
+
+
+// another example
+var i = 0;
+var a = {
+  ['foo' + ++i] : i,
+  ['foo' + ++i] : i,
+  ['foo' + ++i] : i
+};
+console.log(a.foo1);   // 1
+console.log(a.foo2);   // 2
+console.log(a.foo3);   // 3
+
+
+// another example
+var param = 'size';
+var config = {
+  [param] : 12,
+  ['mobile' + param.charAt(0).toUpperCase() + param.slice(1)] : 4
+};
+console.log(config.mobileSize);   // 4
+
+
+// to combile 2 objects use assign() method
+let person = {
+  name : 'Jack',
+  age : 18,
+  sex : 'male'
+};
+let student = {
+  name : 'Bob',
+  age : 20,
+  xp : '2'
+};
+
+let newObj = Object.assign({}, person, student);
+console.log(newObj.name);   // Bob
+console.log(newObj.age);   // 20
+console.log(newObj.sex);   // male
+console.log(newObj.xp);   // 2
+
+
+// mutation
+let person = {
+  name : 'Jack',
+  age : 18
+};
+
+let newPerson = person;   // newPerson references person
+
+newPerson.name = 'Bob';
+
+console.log(person.name);   // Bob
+console.log(newPerson.name);   // Bob
+
+
+// avoiding mutation
+let person = {
+  name : 'Jack',
+  age : 18
+};
+
+let newPerson = Object.assign({},person);
+
+newPerson.name = 'Bob';
+
+console.log(person.name);   // Jack
+console.log(newPerson.name);   // Bob
+
+
+
+// we can also do it like
+let person = {
+  name : 'Jack',
+  age : 18
+};
+
+let newPerson = Object.assign({},person,{name: 'Bob'});
+
+console.log(person.name);   // Jack
+console.log(newPerson.name);   // Bob
+
+
+// example
+const obj1 = {
+  a : 0,
+  b : 2,
+  c : 4
+};
+
+const obj2 = Object.assign({c:5,d:6},obj1);
+
+console.log(obj2.c);   // 4
+console.log(obj2.d);   // 6
+ // this is because the obj2 is first get assigned with c:5, d:6 ,, and letter it override with obj1
+
+
+// Destructing in ES6
+let arr = ['1','2','3'];
+let[one,two,three] = arr;
+console.log(one);  // 1
+console.log(two);  // 2
+console.log(three); // 3
+
+// another example with array
+let a = () => { 
+	return [1,3,2];
+};
+let[one,,two] = a();
+console.log(one);  // 1
+console.log(two);  // 2
+
+
+// assignment and swaping
+let a,b,c=4,d=8;
+[a,b=6] = [2];   // here 2 will be assigned to a   // a = 2 , b = 6
+console.log(a);  // 2
+console.log(b);  // 6
+
+[c,d] = [d,c];   // c = 8 , d = 4  -- swaping
+console.log(c);  // 8
+console.log(d);  // 4
+
+
+
+// Object Destructing
+let obj = {h:100, s:true};
+let{h,s} = obj;
+console.log(h);  // 100
+console.log(s);  // true
+
+
+// without decalration
+let a,b;
+({a,b} = {a:'Hello ',b:'Jack'});
+console.log(a+b);  // Hello Jack
+
+
+// also can do
+let {a,b} = {a: 'Hello', b: 'Jack'};
+console.log(a+b);  // Hello Jack
+
+
+//assign object to new variable names
+var o = {h:42, s: true};
+var {h: foo, s: bar} = o;
+console.log(h);  // Error
+console.log(foo);  // 42
+
+
+// default values
+var obj = {id: 42, name: "Jack"};
+let {id = 10, age = 20} = obj;
+console.log(id);  // 42
+console.log(age);  // 20
+
+
+
+// Simple program to check if the element belongs to an array or not
+let x = [2,4,6,7];
+
+function containsAll(arr){
+  for (let k = 1; k< arguments.length;k++){
+     let num = arguments[k];
+     if(arr.indexOf(num) === -1){
+         return false;
+     }
+  }
+  return true;
+}
+
+console.log(containsAll(x,2,4,7));   // true
+console.log(containsAll(x,4,9));   // false
+
+// we can pass any no. of arguments as above and access them using 'arguments' object
+
+// ES6 provide 'rest' parameter which is more readable
+let x = [2,4,6,7];
+
+function containsAll(arr, ...nums){
+  for (let num of nums){
+     if(arr.indexOf(num) === -1){
+         return false;
+     }
+  }
+  return true;
+}
+
+console.log(containsAll(x,2,4,7));   // true
+console.log(containsAll(x,4,9));   // false
+
+// here the '...nums' is the rest parameter
+// the '...' 3 dots are called "Spread operator"
+// Only the last parameter can be rest parameter
+// if no values passed it will be empty
+
+function magic(...nums){
+	let sum = 0;
+	nums.filter(n=>n%2==0).map(el=>sum+=el);
+	return sum;
+}
+console.log(magic(1,2,3,4,5,6));   // 12
+
+/*
+1%2 != 0,
+2%2 = 0,
+3%2 != 0,
+4%2 = 0,
+5%2 != 0,
+6%2 = 0,
+
+now from the filters only 2,4,6 passes the test
+now map do the sum of all the elements which passes the test. 2+4+6 = 12
+*/
+
+
+// more into spread operator
+// see the below simple example
+function myFunction(w,x,y,z){
+   console.log(w+x+y+z);
+}
+var args = [1,2,3];
+myFunction.apply(null,args.concat(4));   // here we are passing 1,2,3,4   as 4 is now concatnate
+ // answer will be 1+2+3+4 = 10
+
+
+// now with spread operator
+const myFunction = (w,x,y,z) => {
+   console.log(w+x+y+z);
+}
+let args = [1,2,3];
+myFunction(...args,4);   // here we are passing 1,2,3,4   as 4 is now concatnate
+ // answer will be 1+2+3+4 = 10
+
+
+// Date example 
+var dateFields = [1970, 0, 1];   // 1 Jan 1970
+var date = new Date(...dateFields);
+console.log(date);
+
+
+// Array example
+var arr = ["One", "Two", "Five"];
+arr.splice(2,0,"Three");
+arr.splice(3,0,"Four");
+console.log(arr);    // One,Two,Three,Four,Five
+
+
+// Same with spread operator
+let newArr = ['Three','Four'];
+let arr = ['One','Two',...newArr,'Five'];
+console.log(arr);    // One,Two,Three,Four,Five
+
+
+// spread in object literals
+cont obj1 = {foo:'bar',x:42};
+cont obj2 = {foo:'baz',y:5};
+
+const clonedObj = {...obj1};  // {foo:"bar",x:42}
+const mergedObj = {...obj1, ...obj2};   // {foo:"baz", x:42, y:5}
+
+
+// But, if we try to merge them will not get the expected result
+cont obj1 = {foo:'bar',x:42};
+cont obj2 = {foo:'baz',y:5};
+cont merge = (...objects) => ({...objects});
+
+let mergedObj = merge(obj1,obj2);   // {0:{foo:'bar', x:42}, 1:{foo:'baz',y:5}}
+let mergedObj2 = merge({},obj1,obj2);   // {0:{}, 1:{foo:'bar', x:42}, 2:{foo:'baz',y:5}}
+
+
+
+//Classes in ES6
+  // class is the keyword and constructor method for initialization
+  // only 1 constructor is allowed per class
+class Rectangle{
+  constructor(height,width){
+    this.height = height;
+    this.width = width;
+  }
+  getHeight(){return this.height;}
+  getWidth(){return this.width;}
+}
+
+// object creation
+const square = new Rectangle(5,5);
+const poster = new Rectangle(2,3);
+
+
+// class as expression 
+// named class
+var Square = class Rectangle {
+  constructor(height,width){
+    this.height = height;
+    this.width = width;
+  }
+}
+
+// un-named class
+var Square = class {
+  constructor(height,width){
+    this.height = height;
+    this.width = width;
+  }
+}
+
+
+// class methods
+class Rectangle{
+  constructor(height,width){
+    this.height = height;
+    this.width = width;
+  }
+  get area(){ return this.calcArea();}
+  calcArea(){
+     return this.height * this.width;
+  }
+  
+  getHeight(){return this.height;}
+  getWidth(){return this.width;}
+}
+
+const square = new Rectangle(5,5);
+console.log(square.area);  // 25   -- here area is a getter and calcArea is the method
+
+
+// static method 
+   // can not be called with class instances
+   // these are used to create utility functions for application
+class point{
+  constructor(x,y){
+    this.x = x;
+    this.y = y;
+  }
+  static distance(a,b){
+     const dx = a.x - b.x;
+     const dy = a.y - b.y;
+     return Math.hypot(dx, dy);
+  }
+}
+const p1 = new Point(7,2);
+const p2 = new Point(3,8);
+console.log(Point.distance(p1,p2));  // 7.211102550927979
+
+
+// Inheritance
+class Animal{
+  constructor(name){
+    this.name = name;
+  }
+  speak(){
+     console.log(this.name+' makes a noise.');
+  }
+}
+class Dog extends Animal{
+   speak(){
+     console.log(this.name + ' barks.')
+   }
+}
+
+let dog = new Dog('Rex');
+dog.speak();  // Rex barks
+
+// here the super class constructor method called by default
+// to call parent class methods from child we can use 'super' keyword
+
+class Human{
+  constructor(name){
+    this.name = name;
+  }
+}
+class Student extends Human{
+  constructor(name,age){
+    super(name);
+    this.age = age;
+  }
+}
+
+
+// Map  -- to hold key/value pairs
+let map = new Map([['k1','v1'],['k2','v2']]);
+console.log(map.size); //2
+
+set(key,value)  -- set new pair, if key already exist then it replaces the old one
+get(key)  -- gets the value
+has(key) -- returns true if key exists
+delete(key) -- deletes the pair, and returns true -- if key not found returns false
+clear()  --  remove all
+keys()  -- returns an iterator of keys in the map for each element
+values()  -- returns an iterator of values in the map for each element
+entries()  --  returns an iterator of array[key,value] in the map for each element
+
+let map = new Map();
+map.set('k1','v1').set('k2','v2');
+console.log(map.get('k1'));  // v1
+console.log(map.has('k2'));  // true
+for(let kv of map.entries())
+   console.log(kv[0] + " : "+ kv[1]);
+
+// in Map 1 & "1"  are different  - as it supports data types
+
+
+//An example
+let myMap = new Map();
+myMap.set('zero',0);
+myMap.set('one',1);
+for(let [key,value] of myMap){
+	console.log(`${key}=${value}`);
+}
+/*
+zero = 0
+one = 1
+*/
+
+
+// Set  -- to hold unique values
+let set = new Set([1,2,4,2,59,9,4,9,1]);
+console.log(set.size);  // 5    -- only unique considered
+
+add(value) -- add new element
+delete(value)  -- delete the element
+has(value)  -- returns true if value found
+clear()  -- clear set
+values()  -- returns an iterator of values in set
+
+let set = new Set();
+set.add(5).add(9).add(59).add(9);
+console.log(set.has(9));   // true
+
+for(let v of set.values())
+   console.log(v);    // 5 9 59
+
+// in Set 1 & "1"  are different  - as it supports data types
+
+
+
+// Promises
+// a code with setTimeout
+setTimeout(function(){
+	console.log("Work 1");
+	setTimeout(function(){
+		console.log("Work 2");
+	}, 1000);
+}, 1000);
+console.log("End");
+
+/*
+End
+Work 1
+Work 2
+*/
+
+// here the work is done asynchronously
+//but if there are more events like this, the code becomes very complex.
+
+
+// ES6 provides Promise
+// resolve is the method for success 
+// and reject is the method for failure
+// if method returns a promise, its calls should use the then method which takes two methods as input; one for success and other for the failure
+
+function asyncFunc(work){
+	return new Promise(function(resolve, reject){
+		if(work === "")
+			reject(Error("Nothing"));
+		setTimeout(function(){
+			resolve(work);
+		}, 1000);
+	});
+}
+
+asyncFunc("Work 1")  // Task 1
+.then(function(result){
+	console.log(result);
+	return asyncFunc("Work 2");  // Task 2
+}, function(error){
+	console.log(error);
+})
+.then(function(result){
+	console.log(result);
+}, function(error){
+	console.log(error);
+});
+console.log("End");
+
+/*
+End
+Work 1
+Work 2
+*/
+
+
+//Iterator & Generator
+// Symbol.iterator is the default iterator for an object. the for...of loops are based on this type of iterator.
+// First we create an object, and use the Symbol.iterator and generator function to fill it with some values.
+// the generator function = function* (){}
+
+function* idMaker() {
+  let index = 0;
+  while(index < 5)
+    yield index++;
+}
+var gen = idMaker();
+
+console.log(gen.next().value);   // 0
+console.log(gen.next().value);   // 1
+console.log(gen.next().value);   // 2
+console.log(gen.next().value);   // 3
+console.log(gen.next().value);   // 4
+console.log(gen.next().value);   // undefined
+
+
+//another example
+const arr = ['0','1','4','a','9','c','16'];
+const my_obj = {
+	[Symbol.iterator] : function*() {
+		for(let index of arr){
+			yield `${index}`;
+		}
+	}
+};
+const all = [...my_obj]
+	.map(i=>parseInt(i, 10))
+	.map(Math.sqrt)
+	.filter((i) => i<5)
+	.reduce((i,d) => i+d);
+
+console.log(all);   // 10
+
+// we create an object of 7 elements by using Symbol.iterator and generator functions.
+// in second part we assign our object to a constant all.
+
+
+// Modules
+// we can use import and export keywords to maintain the modularity
+
+// in lib/math.js
+export let sum = (x,y) => {
+	return x+y;
+}
+export let pi = 3.14;
+
+// in app.js
+import * as math from "lib/math"
+console.log(`2p = + ${math.sum(math.pi, math.pi)}`);
+
+// in above we are exporting sum and pi which we are importing in app.js with math variable.
+
+
+// ES6 built in methods
+// Array element finding
+// to find the first element, as per rule
+[4,5,1,8,2,0].filter(function(x){
+	return x > 3;
+})[0];
+
+
+// new syntax for above case
+[4,5,1,8,2,0].find(x => x > 3);
+
+// you can also get the index of the item above by using the findIndex() method
+[4,5,1,8,2,0].findIndex(x => x > 3);
+
+
+
+// Simple code to repeate the string
+console.log(Array(3 + 1).join("foo"));    // foofoofoo
+
+// new syntax
+console.log("foo".repeat(3));   // foofoofoo
+
+
+// search string
+"SoloLearn".indexOf("solo") === 0;  // true
+"SoloLearn".indexOf("solo") === (4 - "Solo".length);  // true
+"SoloLearn".indexOf("loLe") !== -1;  // true
+"SoloLearn".indexOf("olo",1) !== -1;  // true
+"SoloLearn".indexOf("olo",2) === -1;  // false
+
+
+// new syntax
+"SoloLearn".startsWith("solo",0);  // true
+"SoloLearn".endsWuth("solo",4);  // true
+"SoloLearn".includes("loLe");  // true
+"SoloLearn".includes("olo",1);  // true
+"SoloLearn".includes("olo",2);  // false
