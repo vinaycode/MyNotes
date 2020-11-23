@@ -1,0 +1,556 @@
+------------
+
+VPN : 212.123.255.178
+
+--------------------------------------------------------
+RDP :-
+212.123.255.183  :-  Username : RDP1 & RDP2 / Password: cts123
+212.123.255.184            :-  Username : RDP1 & RDP2 / Password: cts123
+212.123.255.185            :-  Username : RDP1 & RDP2 / Password: cts123
+212.123.255.186          :-  Username : RDP1 & RDP2 / Password: cts123
+
+
+-----------------------------------------------------------
+BIOs password Laptop :-
+welcome
+
+
+-----------------------------------------------------------
+Laptop Admin Access :-
+uid : .\vnameit
+pass: M3NgOJYuC3$7
+
+
+-----------------------------------------------------------
+KT Links :-
+
+PPIT Release Staffing Planner 2020 :-
+https://ppit.ctsextranet.com/confluence/pages/viewpage.action?spaceKey=PPIT&title=PPIT+Release+Staffing+Planner+2020
+
+Requested access for below link :-
+https://ppit.ctsextranet.com/confluence/display/PISS/Prepaid+IT+-+Steady+State+Activities+and+Processes#space-menu-link-content
+
+No permission for below pages :-
+https://ppit.ctsextranet.com/confluence/display/PISS/WO+Creation+and+Approval
+https://ppit.ctsextranet.com/confluence/pages/viewpage.action?pageId=97197853
+https://ppit.ctsextranet.com/confluence/display/PISS/L3+Activity
+
+
+
+Day 2 with Gaurav Jha :-
+-----------------------
+https://ppit.ctsextranet.com/
+https://ppit.ctsextranet.com/branch/
+https://ppit.ctsextranet.com/confluence/display/PPIT/Branching
+https://ppit.ctsextranet.com/confluence/display/PPIT/Prepaid+IT+Deployment+view
+https://ppit.ctsextranet.com/confluence/display/PPIT/C+-+Installation+using+the+centralized+installer
+https://ppit.ctsextranet.com/confluence/display/PPIT/Installation+E2E2+of+MS_SD_PREPAID-V6.33.0.0
+
+Putty connection manager E2E-PROD/ properties and configuration files / ICT - elord - with the help of Gopesh desktop sharing.
+https://ppit.ctsextranet.com/confluence/display/PPIT/Extranet+Jenkins+Instances
+
+
+Day 3 with mohi :-
+----------------
+https://ppit.ctsextranet.com/confluence/display/PPIT/Server+Modules
+https://ppit.ctsextranet.com/confluence/display/PPIT/How+To%3A+Create+a+Server+Module
+https://ppit.ctsextranet.com/confluence/display/PIT/Transition+Session+-+Direct+Debit
+https://ppit.ctsextranet.com/confluence/display/PPIT/Direct+Debit
+
+
+Day 4 with gopesh :-
+----------------
+
+https://ppit.ctsextranet.com/confluence/display/PPIT/Product+Model
+https://ppit.ctsextranet.com/confluence/display/PPIT/Customer
+https://ppit.ctsextranet.com/confluence/display/PPIT/Pack
+https://ppit.ctsextranet.com/confluence/display/PPIT/Pack+Group
+https://ppit.ctsextranet.com/confluence/display/PPIT/SIM+card
+https://ppit.ctsextranet.com/confluence/display/PPIT/Tariff
+https://ppit.ctsextranet.com/confluence/display/PPIT/Domain+Model+for+Packs
+https://ppit.ctsextranet.com/confluence/display/PPIT/Product+Concept
+https://ppit.ctsextranet.com/confluence/display/PPIT/Pack+Lifecycle+and+OCS+Communication
+
+
+day 6 with Vijayamalathy Govindasamy :-
+-----------------------------------------
+https://ppit.ctsextranet.com/confluence/display/PPIT/External+Interfaces
+
+
+day 7 with Mohi :-
+---------------------
+https://ppit.ctsextranet.com/confluence/display/PIT/Transition+Session+-+Churn
+
+
+-------------------------------------------------------------------------------
+
+Project Setup :::
+------------------------------------------------------------------
+Raise GSD for admin rights, the person will call you.
+Need JAVA :- download java from google.
+to install provide admin username and password.
+
+Need git bash :- download and install.
+
+open git bash : type :  cd /     (go to root location)
+enter command : ssh-keygen -t rsa -b 4096    (To generate pub key)
+		Just hit enter, enter.
+Now type :  cd ~/.ssh
+then type :  notepad id_rsa.pub
+	Copy the key and share to "Amol Atthe"
+
+Add below entries in "c:/windows/system32/drivers/etc/hosts" file
+#PPIT Enviornment
+#git
+10.5.0.5          ppit-ziggy.ppit            ziggy  ppit.ctsextranet.com
+10.5.0.27         ppit-star.ppit           star
+10.5.0.25          ppit-dust.ppit           dust
+10.5.0.15          ppit-infra.ppit           ppit-infra   mail.ctsextranet.com
+
+#dev image
+192.168.16.101 vdce8.vagrant.internal vdce8 dev-tmas
+192.168.16.102 vdcal.vagrant.internal vdcal dev-pas
+192.168.16.103 dbs.vagrant.internal dbs dev-eh-db dev-hermes-db dev-joker-db dev-peps-db dev-ppo-db dev-tm-db
+192.168.16.104 vdcag.vagrant.internal vdcag dev-ehas dev-pqs dev-lbas
+192.168.16.105 semo.vagrant.internal semo vdcaj vdcas vdcpt vdcan vdcak vdce7 vdce9
+
+
+and save the file....
+
+download latest intellij from google, and install
+	Tips :-
+		Ctrl+shift+f7 to search occurance of certain variable in a file.
+		F3 and Shift+F3 to navigate
+		ESC to discard
+
+		Ctrl+alt+7 to search something in all places
+
+		Ctrl+shift+I to see the <img> in popup
+
+		CtrL+shift+A to quickly find action/setting/menu command
+
+		Double Shift to search everywhere 
+
+		Ctrl+shift+up to move selected line/code up
+
+		Ctrl+shift+down to move selected line/code down
+
+		Ctrl+shift+f to find in path, preview shows first 100 results
+
+		f2/shift+f2 to jump between highlighted syntax errors
+
+		ctrl+alt+up/ctrl+alt+down to jump between error messages or search results
+
+		ctrl+space for word completion
+
+		VCS > Local history > show history  - to see local history
+
+		to change the color of specific text - Ctrl+shift+A then type 'Jump' and jump to color and fonts
+
+		ctrl+shift+i for quick definition
+
+		 
+
+		
+
+Need some more softwares -
+Cisco Any Connect (If not preinstalled) : https://www.youtube.com/watch?v=oaYFT8hBn1k
+Apache ANT 1.9.15	: https://mirrors.estointernet.in/apache//ant/binaries/apache-ant-1.9.15-bin.zip
+	For ubuntu :- sudo apt install ant
+Gradle 4.10.2	: https://gradle.org/next-steps/?version=4.10.2&format=all
+Sqldeveloper 19.2	: https://www.oracle.com/tools/downloads/sqldev-v192-downloads.html
+Vagrant 2.2.9	: https://releases.hashicorp.com/vagrant/2.2.9/vagrant_2.2.9_x86_64.msi
+VirtualBox 6.1.10	: https://download.virtualbox.org/virtualbox/6.1.10/VirtualBox-6.1.10-138449-Win.exe
+Ubuntu 18.04.4	: https://releases.ubuntu.com/18.04/ubuntu-18.04.4-desktop-amd64.iso
+intelliJIdea
+Python 2.7.18
+java 8 : https://download.oracle.com/otn/java/jdk/8u25-b18/jdk-8u25-windows-x64.exe
+Java 7 : https://www.oracle.com/downloads/javase-software-license-agreement.html#license-lightbox
+
+
+For all setup follow : https://ppit.ctsextranet.com/confluence/display/PIA/Module+3+-1-+Preparation
+
+Now download Dust image (12GB) : https://ppit-dust.ppit/devimage/snapshots/ppit-devimage.box
+
+Open the cmd prompt,
+and check if vagrant is installed or not - 
+> vagrant -v
+Vagrant 2.2.9
+
+Update environment variables in environment setup :-
+
+JAVA_HOME="C:\Program Files\Java\jdk1.8.0_25"
+PPIT_JAVA7_HOME="C:\Program Files\Java\jdk1.7.0_71"
+PPIT_ROOT="C:\Users\799680\Documents\ppit\ppit"
+	Note: PPIT_ROOT refer to your git ppit folder.
+
+Set environment variable for ANT and GRADLE
+ANT_HOME
+GRADLE_HOME    (till bin folder)
+And check version for all at cmd
+
+
+.................................................
+Then at git bash -   (go to documents folder, create a new folder as 'ppit')
+Then run a command in git bash -  (this is to avoid \r Carriage return problem with .sh files)
+799680@LT088680 MINGW64 ~/documents/ppit
+$ git config --global core.autocrlf false
+	- later if you need this carriage return you can run same command with replacing false to true.
+	- takes no time.
+	- To check if this applied or not, Open any .sh file in Notepad++, go To Edit menu and check EOL Conversion. It should be "Windows (CR LF)" selected.
+
+Now checkout the code :- (make sure VPN is connected)
+799680@LT088680 MINGW64 ~/documents/ppit
+$ git clone gitolite@ppit-ziggy.ppit:PPIT ppit
+	- This will checkout all code
+	- takes arround 50 min
+	- Our code is using Gradle not Maven, so we will have to import the project as Gradle project in intellij
+
+	- But this will checkout from master branch "R19.9"
+	- so we will need to make the checkout from latest branch.
+	- current latest branch is "R20.7"
+	- so run inside project folder ppit :-
+
+799680@LT088680 MINGW64 ~/Documents/ppit/ppit (R19.9)
+$ git checkout R20.7
+	- If it says  :-
+	"error: Your local changes to the following files would be overwritten by checkout:"
+	
+	- then run :- > git stash
+	and then again do  > git checkout R20.7
+	- takes arround 5 min
+
+799680@LT088680 MINGW64 ~/Documents/ppit/ppit (R20.7)
+$ git pull
+	- takes 2 min (you will get latest code)
+
+Now to varify current branch version : > git branch
+
+Not necessory step :- (to manage memory size in vagrant)
+Now go to ppit/devimage folder and open Vagrantfile in notepad++
+and change the value assigned for "VAGRANT_MEMORY_SIZE" in else part at line 35
+from 8192 to 6144   (this specify to use 6GB RAM only instead of preallocated 8GB RAM)
+
+keep the downloaded file "ppit-devimage.box" to the "devimage" folder.
+
+Also While running the script you are going to need some large size files,
+for which you will either need to wait till all the files get download on the go.
+Or you can ask your seniors, if they can provide you and place the files manually.
+
+At : C:\Users\799680\Documents\ppit\ppit\LoadBalancerApplicationServer\build
+Place 2 files -
+	apache_ppit-bin-linux-wls-2.4.17_12.2.1.2.0_p25111862.tar
+	apache_ppit-bin-solaris11-wls-2.4.17_12.2.1.2.0_p25111862.tar
+
+At : C:\Users\799680\Documents\ppit\ppit\WeblogicServer\dist\wls-installer
+Place a weblogic jar file -
+	Weblogic-Server-GenericInstaller-12.2.1.2.0
+
+And at same location place patch files.
+	patch24799149-12.2.1.2.0
+	patch24921594-12.2.1.2.0
+	patch25071727-12.2.1.2.0
+	patch25360870-12.2.1.2.0
+	patch25475820-12.2.1.2.0
+	patch26145911-12.2.1.2.0
+
+
+If folders are not there then create them.
+
+And Now run below command at location :-
+C:\Users\799680\Documents\ppit\ppit\build_all
+From Git bash :-
+./buildNoGuiSigningAndTests.sh	(successfull - ant build)
+	- takes 2:45 hrs
+
+Now at Project location : C:\Users\799680\Documents\ppit\ppit\
+./buildNoTestAndGuiSigning.sh (successfull - gradle build)
+	- takes  30 min
+
+Now add our "ppit-devimage.box" to vagrant :-
+
+
+Here the "C:\Users\799680\Documents\ppit\ppit" is your %PPIT_ROOT%
+and you can find the "devimage" folder in there.
+
+To add box image to vagrant :-
+At cmd prompt :-
+>cd %PPIT_ROOT%
+>cd devimage
+
+To see all images already added in vagrant, if any :-
+> vagrant box list
+
+To remove image already added in vagrant, if any :-
+> vagrant box remove <name>       (we can get the name of image from above command)
+
+To add new basebox image :-
+> vagrant box add ppit-devimage ppit-devimage.box
+  -- "ppit-devimage.box" is the name of the downloaded file
+  -- this command takes lot of time to response.
+  -- wait till you get msg - 
+	Successfully added box 'ppit-devimage' (v0) for 'virtualbox'!
+
+Now do vagrant up : 
+> vagrant up
+	-- it will show progress... 10% ... 20% ...
+
+If it fails, then the reason would be BIOS virtualization setting.
+which need to be enabled.
+
+If it fails for Port already in use, then open 'Vagrantfile' and change the host from
+2222 to 2223
+
+Note: after the above step execution image can be seen from virtualbox.
+
+Now at At git bash , in folder - /Documents/ppit/ppit/devimage
+
+// Not needed step :-
+// 799680@LT088680 MINGW64 ~/Documents/ppit/ppit/devimage (R20.7)
+// $ ./sshx.sh
+	- takes no time
+
+799680@LT088680 MINGW64 ~/Documents/ppit/ppit/devimage (R20.7)
+$ vagrant ssh
+	- it gives ssh root prompt
+	[root@ppit-devimage]  ~  >
+
+Now,
+[root@ppit-devimage]  ~  > cd vagrant/scripts/
+
+[root@ppit-devimage]  /vagrant/scripts  > export ENV_ID=dev99
+[root@ppit-devimage]  /vagrant/scripts  > ./control.sh sds
+	- taking 2 hrs
+
+
+Weblogic console :-
+at browser : http://vdcag:7001/console/
+id : weblogic
+pass : o2cando2014
+
+
+If at end it says like "Simulator : ADMIN"
+and others are in ACTIVE state.
+then need to reload the simulator.
+for to re deploy any module you can check with 
+[root@ppit-devimage]  /vagrant/scripts  > ./control.sh deploy <hit tab here>
+as you hit 'tab' you will see the list of modules and the name to deploye them.
+So, to deploy only simulator, 
+[root@ppit-devimage]  /vagrant/scripts  > ./control.sh deploy sim_all
+
+
+Once done.
+You can save the snapshot so that next time it will not take this much time.
+For that open another terminal at devimage folder.
+> vagrant snapshot save <any_name>
+
+> vagrant snapshot list
+ -- will give the list of all stored snapshots
+
+> vagrant snapshot restore <any_name>     // name of the already saved snapshot
+
+
+The user manual is also installed now check the location :
+ usr/share/doc/virtualbox/UserManual.pdf
+
+
+Command to run before SDS. It will increase the memory size :-
+export VAGRANT_MEMORY_SIZE=32768 && export VAGRANT_NUM_CPUS=8
+
+------------------------------------------------------------------------
+While commiting the code, always use 'ppit' and task id
+like : PPIT-6667 : <comment>
+
+Commit For review :-
+git commit -m "PPIT-6667: <commit_comment> +review PPIT-REVIEW-42206
+
+
+-------------------------------------------------------------------------
+Set Git username email_addr :-
+799680@LT088680 MINGW64 ~/Documents/ppit/ppit (FEATURE-TRANSITION-EMAIL-VERIFICATION-CUST-DATA)
+$ git config --global user.name "Vinay Padole"
+
+799680@LT088680 MINGW64 ~/Documents/ppit/ppit (FEATURE-TRANSITION-EMAIL-VERIFICATION-CUST-DATA)
+$ git config --global user.email "799680@cognizant.com"
+
+
+-----------------------------------------------------------------------------
+To get rid of all local commits, and make code as in Remote repo  :-
+git reset --hard origin/FEATURE-EMAIL-VERIFICATION
+git clean -f -d
+
+-----------------------------------------------------------------------------
+To remove unpushed local commits, here 1 means last commit
+git reset --soft HEAD~1
+-------------------------------------------------------------------------------
+To change the java version in ubuntu :- sudo update-alternatives --config java
+then select 1,
+And the version will change to java7
+
+For java8 :- java8 is enough (Can use above method as well)
+
+-----------------------------------------------------------------------------------
+In EMV REST story :-
+
+site to decode :- base64decode.org
+Valid for all Test Environments
+ClientId : PPIT 
+Authorisation: Basic bWNlX3BwaXQ6UjIwLTlAbWNlX3BwaXQ=
+
+Production Environment
+ClientId : PPIT
+Authorisation: Basic bWNlX3BwaXQ6UjIwLTlAbWNlX3BwaXQxNTA3MTc=
+
+-----------------------------------------------------------------------------------
+
+For DB setup ::-
+Vagrant must be Running, and SDS should be successfull.
+
+Follow the confluence page.
+download the xml file, import the connection and setup the DB.
+In any DB to login it ask for password, which is 
+the username and append 1 to it.
+Like "TM_ADM1"
+
+
+---------------------------------------------------------
+For Estimation meeting :-
+Business Analyst explain the SR.
+All who are present for meeting need to give points, as per self decision, and be ready for justification if the points differ.
+There are 2 estimations - MidTerm & Final
+1 story point means 4.5 days of development
+1 is the lowest , 5 means the highest in our case.
+We can also give 0.5 something points. But usualy for such thing we give 1.
+we can also go beyond 5 for some cases. i.e. like 8, 10, 13 ...
+we follow the Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100.
+
+
+---------------------------------------------------------
+To create New Branch :-
+First checkout the original Branch.
+then create Brnach local -
+	git checkout -b <branch_name>
+push the newly created branch to Repo -
+	git push -u origin <branch_name>
+
+Now the branch will be available to all.
+
+------------------------------------------------------------
+Create a New Table Process example :-
+
+https://ppit.ctsextranet.com/jira/browse/PPIT-58737
+
+For every new Table creation we have to also define -
+DTO
+DAO
+patch
+insert script
+initial configuration
+
+------------------------------------------------------------
+Extend a Table Process (Add new Column) :-
+
+https://ppit.ctsextranet.com/jira/browse/PPIT-58621
+
+------------------------------------------------------------
+For every story we have to have a task to update ASAD,SO,IRM etc pages.
+	as well External Interfaces if any - https://ppit.ctsextranet.com/confluence/display/PPIT/External+Interfaces
+	And also to create new Interface page like EMV - https://ppit.ctsextranet.com/confluence/pages/viewpage.action?pageId=168657840 
+	
+
+-------------------------------------------------------------
+For empty check of String :-
+StringUtils.isNullOrBlank( string )
+this belongs from package :- com.telefonica.prepaid.common.util
+
+
+-------------------------------------------------------------
+To check current application GUI working :-
+run the tests one by one for each case -
+	mannualcsguipresentationtest
+	
+-------------------------------------------------------------
+.ser files (Serialization) generated when ever we do new entries in some yaml files like
+releases.yaml
+
+// Many java programs save their objects using Serialization. The common extention for serialized objects is .ser
+-------------------------------------------------------------
+In patch file mention the <execution-environments> only if that patch is specific to that environment, otherwise don't mention it.
+-------------------------------------------------------------
+Milestone example (by Gaurav) :-
+https://ppit.ctsextranet.com/jira/browse/PPIT-60535
+
+Sometimes need to disable the sonar job.
+-------------------------------------------------------------
+SonarLint check :- https://ppit.ctsextranet.com/confluence/display/PPIT/SonarLint+Pre-commit+Hook
+Sonar Dashboard :- https://ppit.ctsextranet.com/sonar/
+
+-------------------------------------------------------------
+For sprint 190 :-
+Go to Jira - https://ppit.ctsextranet.com/jira/issues/?jql=
+At "Advanced" beside "search" button.
+For finding stories specific to sprint use filter - "Epic Link" = PPIT-59829 AND labels = 20.11_dev and Sprint ="Sprint 189"  ORDER BY Sprint ASC
+For finding stories specific to sprint use filter - "Epic Link" = PPIT-59829 AND labels = 20.11_dev and Sprint ="Sprint 190"  ORDER BY Sprint ASC
+Save this filter as "EECC_Sprint190" in JIRA. These will be the stories planned.
+
+Filter for whole SR - "Epic Link" = PPIT-59829 AND labels = 20.11_dev  ORDER BY Sprint ASC
+-------------------------------------------------------------
+To add Code Formater for intellij :-
+https://ppit.ctsextranet.com/confluence/display/PPIT/IntelliJ+IDEA+Setup#IntelliJIDEASetup-Formatting
+-------------------------------------------------------------
+To add the data source in Intellij :-
+Download the "attached.zip" file from below page, (section - Adding data sources)
+https://ppit.ctsextranet.com/confluence/display/PPIT/IntelliJ+IDEA+Setup#IntelliJIDEASetup-Formatting
+Extract it.
+copy the content at .idea folder in our project code.
+and restart intellij.
+-------------------------------------------------------------
+Install "Database navigator"
+in intellij File > Setting > Plugin
+(Need to check how to do connection settings)
+-------------------------------------------------------------
+Prepaid Telefonica SVN repo (unable to access from CTS) :- http://demucvtr13.de.pri.o2.com/svn/is_docs/trunk/apps/PREPAID
+If Issue with SVN check-in and checkout :-
+https://ppit.ctsextranet.com/confluence/display/PPIT/Tortoise+SVN+issues+-+Solution
+Can use Tortoise SVN application.
+-------------------------------------------------------------
+Critical Violation Link for release :-
+https://ppit.ctsextranet.com/confluence/display/PPIT/Release+-+CAST
+
+-------------------------------------------------------------
+
+git stash
+git up 
+git stash pop
+-------------------------------------------------------------
+SoapRequestSender.java is the important class to send and receive the SOAP calls.
+	sendSoapRequest(SOAPMessage soapMessage)
+	here we can see the actual XML document formation, and correct our logic
+	
+	
+CustomerCareAuthorizationInterceptorBase.java.
+	Here the authorization happens, for which we must need the entry of operation in TAB_PREPAID_API_AUTHORIZATION table
+	with operationName, Channel, ClientId, SystemID
+	
+crmorder
+
+Check TAB_SP_SYSTEM_MAPPING table for systemId entries.
+
+-------------------------------------------------------------
+1. Update Project diary with issues (https://apc01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fppit.ctsextranet.com%2Fconfluence%2Fdisplay%2FPPIT%2FProject%2BDiary&data=02%7C01%7Cvinay.padole%40cognizant.com%7Caf13aea99f6e41d8f91208d85b9fb98b%7Cde08c40719b9427d9fe8edf254300ca7%7C0%7C0%7C637360089205935721&sdata=UgPNSeMPx%2FyXwLYoaKoqCNBBKceRHbojrQRFntpYc2M%3D&reserved=0)
+2. One member from each team to attend. You can decide who will attend SOS in your respective stand-up.
+3. Provide updates for your whole team and convey dependency on other teams or any impediments
+4. Respective teams jenkins status check - https://ppit.ctsextranet.com/branch/
+5. SR/Story Deadlines recheck - https://ppit.ctsextranet.com/sonar/
+6. Sonar violations recheck
+7. Development status
+8. Review status
+Please refer the following page for details: 
+https://ppit.ctsextranet.com/confluence/x/eQFCCQ
+
+-------------------------------------------------------------
+
+To update child branch from Parant branch.
+git merge --no-ff origin/FEATURE-EECC
+
+-------------------------------------------------------------
